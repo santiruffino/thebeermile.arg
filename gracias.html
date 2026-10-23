@@ -10,6 +10,21 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/css/main.css" />
     <script src="/assets/js/main.js" defer></script>
+    <!-- Metricool -->
+    <script>
+      function loadScript(a) {
+        var b = document.getElementsByTagName("head")[0],
+          c = document.createElement("script");
+        (c.type = "text/javascript"),
+          (c.src = "https://tracker.metricool.com/resources/be.js"),
+          (c.onreadystatechange = a),
+          (c.onload = a),
+          b.appendChild(c);
+      }
+      loadScript(function () {
+        beTracker.t({ hash: "1edc188511f6b8a61cc5d8ea1367e9d9" });
+      });
+    </script>
   </head>
   <body class="simple-page">
     <svg class="sr-only" aria-hidden="true" focusable="false">
