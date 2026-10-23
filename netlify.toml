@@ -1,16 +1,28 @@
+# Sitio estático: no hay build, solo se completa la URL pública del sitio.
 [build]
   publish = "."
   # Netlify define URL con la dirección principal del sitio (o el dominio propio si lo agregás).
-  # Se usa para las URLs absolutas que piden las vistas previas de WhatsApp, Instagram, etc.
-  command = "sed -i \"s|__SITE_URL__|${URL}|g\" index.html"
+  # Las vistas previas de WhatsApp, Instagram, etc. necesitan URLs absolutas.
+  command = "sed -i \"s|__SITE_URL__|${URL}|g\" index.html robots.txt sitemap.xml"
+
+[build.environment]
+  # No hace falta instalar las herramientas de desarrollo para publicar.
+  NPM_FLAGS = "--omit=dev"
 
 [[headers]]
   for = "/*"
   [headers.values]
     X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
 [[headers]]
-  for = "/og-image.png"
+  for = "/assets/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/img/*"
   [headers.values]
     Cache-Control = "public, max-age=86400"

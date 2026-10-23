@@ -1,512 +1,635 @@
 <!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Beer Mile Córdoba · Una milla. Cuatro birras.</title>
-<meta name="description" content="Cuatro vueltas a la pista y una birra antes de cada una. La Beer Mile llega a Córdoba: anotate en la lista de espera.">
-<meta name="theme-color" content="#16130F">
-<link rel="canonical" href="__SITE_URL__/">
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beer Mile Córdoba · Una milla. Cuatro birras.</title>
+    <meta
+      name="description"
+      content="Cuatro vueltas a la pista y una birra antes de cada una. La Beer Mile llega a Córdoba: anotate en la lista de espera."
+    />
+    <meta name="theme-color" content="#16130F" />
+    <link rel="canonical" href="__SITE_URL__/" />
 
-<!-- Open Graph (WhatsApp, Facebook, LinkedIn, Instagram DM) -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Beer Mile Córdoba">
-<meta property="og:locale" content="es_AR">
-<meta property="og:url" content="__SITE_URL__/">
-<meta property="og:title" content="Beer Mile Córdoba · Una milla. Cuatro birras.">
-<meta property="og:description" content="Cuatro vueltas a la pista y una birra antes de cada una. Anotate en la lista de espera.">
-<meta property="og:image" content="__SITE_URL__/og-image.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Mascota de la Beer Mile, un vaso de cerveza corriendo, junto al logo BEER MILE">
+    <!-- Open Graph (WhatsApp, Facebook, LinkedIn, Instagram DM) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Beer Mile Córdoba" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:url" content="__SITE_URL__/" />
+    <meta property="og:title" content="Beer Mile Córdoba · Una milla. Cuatro birras." />
+    <meta
+      property="og:description"
+      content="Cuatro vueltas a la pista y una birra antes de cada una. Anotate en la lista de espera."
+    />
+    <meta property="og:image" content="__SITE_URL__/assets/img/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Mascota de la Beer Mile, un vaso de cerveza corriendo, junto al logo BEER MILE"
+    />
 
-<!-- X / Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Beer Mile Córdoba · Una milla. Cuatro birras.">
-<meta name="twitter:description" content="Cuatro vueltas a la pista y una birra antes de cada una. Anotate en la lista de espera.">
-<meta name="twitter:image" content="__SITE_URL__/og-image.png">
-<meta name="twitter:image:alt" content="Mascota de la Beer Mile, un vaso de cerveza corriendo, junto al logo BEER MILE">
+    <!-- X / Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Beer Mile Córdoba · Una milla. Cuatro birras." />
+    <meta
+      name="twitter:description"
+      content="Cuatro vueltas a la pista y una birra antes de cada una. Anotate en la lista de espera."
+    />
+    <meta name="twitter:image" content="__SITE_URL__/assets/img/og-image.png" />
 
-<!-- Íconos -->
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
+    <!-- Íconos -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-<!-- Datos estructurados -->
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SportsOrganization","name":"Beer Mile Córdoba","url":"__SITE_URL__/","logo":"__SITE_URL__/icon-512.png","sport":"Running","address":{"@type":"PostalAddress","addressLocality":"Córdoba","addressCountry":"AR"},"sameAs":["https://www.instagram.com/thebeermile.arg/"]}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:wght@400;700&amp;display=swap">
-<style>
-body{margin:0;background:#FBF6EC}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-a{color:#16130F}a:hover{color:#1F7FAE}
-:focus-visible{outline:3px solid #1F7FAE;outline-offset:3px}
-.ant{font-family:'Anton',Impact,sans-serif;font-weight:400;letter-spacing:2px;text-transform:uppercase}
-.btn{transition:transform .2s ease,background-color .2s ease,color .2s ease}
-.btn:hover{transform:translateY(-4px)}
-.btn-dark:hover{background:#2B9BCB !important;color:#16130F !important}
-.btn-line:hover{background:#16130F !important;color:#FBF6EC !important}
-.navlink{text-decoration:none;color:#FBF6EC}
-.navlink:hover{color:#4BB8E0}
+    <!-- Fuentes y estilos -->
+    <link rel="preload" href="/assets/fonts/anton-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/archivo-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="/assets/js/main.js" defer></script>
 
-/* hero */
-.hero{grid-template-columns:minmax(0,1fr)}
-@media (min-width: 860px){.hero{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}}
-.rise{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
-@keyframes rise{from{opacity:0;transform:translateY(80px)}to{opacity:1;transform:none}}
-.bob{animation:bob 2.6s ease-in-out infinite}
-@keyframes bob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-18px) rotate(3deg)}}
-.slosh{animation:slosh 3s ease-in-out infinite}
-@keyframes slosh{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
-.spin{animation:spin 50s linear infinite;transform-box:fill-box;transform-origin:center}
-@keyframes spin{to{transform:rotate(360deg)}}
-.pulse{animation:pulse 1.6s ease-out infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(31,127,174,.6)}100%{box-shadow:0 0 0 12px rgba(31,127,174,0)}}
+    <!-- Datos estructurados -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SportsOrganization",
+        "name": "Beer Mile Córdoba",
+        "url": "__SITE_URL__/",
+        "logo": "__SITE_URL__/icon-512.png",
+        "sport": "Running",
+        "address": { "@type": "PostalAddress", "addressLocality": "Córdoba", "addressCountry": "AR" },
+        "sameAs": ["https://www.instagram.com/thebeermile.arg/"]
+      }
+    </script>
+  </head>
 
-/* marquee */
-.mq{animation:mq 28s linear infinite}
-@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  <body>
+    <!-- Recorte interior del vaso, compartido por todos los <beer-glass> -->
+    <svg class="sr-only" aria-hidden="true" focusable="false">
+      <defs>
+        <clipPath id="glass-clip" clipPathUnits="userSpaceOnUse">
+          <path d="M10 8 L50 8 L44.5 82 L15.5 82 Z" />
+        </clipPath>
+      </defs>
+    </svg>
 
-/* race loop: 16s = 4 laps, each lap = drink (first 1s) + run */
-.runner{animation:lap 16s linear infinite}
-@keyframes lap{0%,6.25%{stroke-dashoffset:0}25%,31.25%{stroke-dashoffset:-1000}50%,56.25%{stroke-dashoffset:-2000}75%,81.25%{stroke-dashoffset:-3000}100%{stroke-dashoffset:-4000}}
-.g1{animation:g1 16s ease-in-out infinite}
-.g2{animation:g2 16s ease-in-out infinite}
-.g3{animation:g3 16s ease-in-out infinite}
-.g4{animation:g4 16s ease-in-out infinite}
-@keyframes g1{0%{transform:translateY(0)}6.25%,96%{transform:translateY(78px)}100%{transform:translateY(0)}}
-@keyframes g2{0%,25%{transform:translateY(0)}31.25%,96%{transform:translateY(78px)}100%{transform:translateY(0)}}
-@keyframes g3{0%,50%{transform:translateY(0)}56.25%,96%{transform:translateY(78px)}100%{transform:translateY(0)}}
-@keyframes g4{0%,75%{transform:translateY(0)}81.25%,96%{transform:translateY(78px)}100%{transform:translateY(0)}}
-.q{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0}
-.q1{opacity:1;animation:q1 16s steps(1) infinite}
-.q2{animation:q2 16s steps(1) infinite}
-.q3{animation:q3 16s steps(1) infinite}
-.q4{animation:q4 16s steps(1) infinite}
-@keyframes q1{0%{opacity:1}25%,100%{opacity:0}}
-@keyframes q2{0%{opacity:0}25%{opacity:1}50%,100%{opacity:0}}
-@keyframes q3{0%{opacity:0}50%{opacity:1}75%,100%{opacity:0}}
-@keyframes q4{0%{opacity:0}75%{opacity:1}}
-.st{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
-.drink{animation:drink 4s steps(1) infinite}
-.run{opacity:0;animation:runl 4s steps(1) infinite}
-@keyframes drink{0%{opacity:1}25%,100%{opacity:0}}
-@keyframes runl{0%{opacity:0}25%,100%{opacity:1}}
-.lap{transition:transform .25s ease,background-color .25s ease}
-.lap:hover{transform:translateX(6px);background:#D6ECF7 !important}
+    <a class="skip-link" href="#main">Saltar al contenido</a>
 
-/* 0,0 band */
-.zero{animation:zero 3.2s ease-in-out infinite}
-@keyframes zero{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
-.mascot{animation:mascot .55s ease-in-out infinite alternate}
-@keyframes mascot{from{transform:translateY(0)}to{transform:translateY(-10px)}}
+    <header class="site-header">
+      <nav class="nav container" aria-label="Principal">
+        <a class="nav__logo wordmark" href="#top">
+          Beer
+          <span class="wordmark__mile">Mile</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="#que-es">Qué es</a></li>
+          <li><a href="#modalidades">Modalidades</a></li>
+          <li><a href="#reglas">Reglas</a></li>
+        </ul>
+        <a class="btn btn--sky btn--sm" href="#lista">Lista de espera</a>
+      </nav>
+    </header>
 
-/* modalidad cards: glasses drain one by one on hover */
-.mcard{transition:transform .35s cubic-bezier(.2,.8,.2,1)}
-.mcard:hover{transform:translateY(-10px) rotate(-1deg)}
-.mcard.is-picked{outline:4px solid #16130F;outline-offset:6px}
-.cl{transition:transform .5s ease-in}
-.mcard:hover .cl{transform:translateY(78px)}
-.mcard:hover .d2{transition-delay:.3s}
-.mcard:hover .d3{transition-delay:.6s}
-.mcard:hover .d4{transition-delay:.9s}
-.rule{transition:transform .3s ease}
-.rule:hover{transform:translateY(-6px)}
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section id="top" class="hero container">
+        <div class="hero__copy">
+          <p class="pill rise">
+            <span class="pill__dot" aria-hidden="true"></span>
+            Lista de espera abierta
+          </p>
+          <h1 class="hero__title">
+            <span class="rise" style="--delay: 0.1s">Beer</span>
+            <span class="rise hero__title-mile" style="--delay: 0.25s">Mile</span>
+          </h1>
+          <p class="hero__tagline rise" style="--delay: 0.4s">Una milla. Cuatro birras. Córdoba.</p>
+          <p class="hero__lead rise" style="--delay: 0.5s">
+            Cuatro vueltas a la pista y una birra antes de cada una. Estamos armando la primera edición:
+            anotate y te avisamos antes que a nadie cuando salgan fecha y cupos.
+          </p>
+          <div class="hero__actions rise" style="--delay: 0.6s">
+            <a class="btn btn--dark btn--lg" href="#lista">Sumarme a la lista</a>
+            <a class="btn btn--outline btn--lg" href="#modalidades">Ver modalidades</a>
+          </div>
+        </div>
 
-/* wishlist */
-.chip[aria-pressed="true"]{background:#16130F !important;color:#FBF6EC !important}
-.hp{position:absolute;left:-9999px}
-.field{width:100%;font:400 17px/1.3 'Archivo',system-ui,sans-serif;color:#16130F;background:#FFFFFF;border:2px solid #16130F;border-radius:14px;padding:14px 16px;min-height:52px}
-.field:focus{outline:3px solid #1F7FAE;outline-offset:2px}
-.chip{transition:transform .15s ease}
-.chip:hover{transform:translateY(-2px)}
-.up{transform:translateY(78px);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
-@keyframes up{to{transform:translateY(0)}}
-.pop{animation:pop .6s cubic-bezier(.2,1.4,.4,1) both}
-@keyframes pop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:none}}
+        <div class="hero__art rise" style="--delay: 0.3s" aria-hidden="true">
+          <svg class="hero__ring" viewBox="0 0 400 400">
+            <circle cx="200" cy="200" r="194" />
+          </svg>
+          <div class="hero__glasses">
+            <div class="hero__row">
+              <beer-glass class="glass--bob" motion="slosh" style="--delay: 0s"></beer-glass>
+              <beer-glass class="glass--bob" level="75" motion="slosh" style="--delay: 0.25s"></beer-glass>
+              <beer-glass class="glass--bob" level="50" motion="slosh" style="--delay: 0.5s"></beer-glass>
+              <beer-glass class="glass--bob" level="25" motion="slosh" style="--delay: 0.75s"></beer-glass>
+            </div>
+            <div class="hero__row hero__labels">
+              <span>V1</span>
+              <span>V2</span>
+              <span>V3</span>
+              <span>V4</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-/* scroll reveal where supported */
-@supports (animation-timeline: view()){
-  @media (prefers-reduced-motion: no-preference){
-    .rv{animation:rv linear both;animation-timeline:view();animation-range:entry 0% entry 60%}
-  }
-}
-@keyframes rv{from{opacity:0;transform:translateY(56px)}to{opacity:1;transform:none}}
+      <!-- ============ MARQUESINA ============ -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Una milla</span>
+          <span class="marquee__dot">·</span>
+          <span>Cuatro birras</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__accent">Córdoba</span>
+          <span class="marquee__dot">·</span>
+          <span>Lista de espera abierta</span>
+          <span class="marquee__dot">·</span>
+          <span>Una milla</span>
+          <span class="marquee__dot">·</span>
+          <span>Cuatro birras</span>
+          <span class="marquee__dot">·</span>
+          <span class="marquee__accent">Córdoba</span>
+          <span class="marquee__dot">·</span>
+          <span>Lista de espera abierta</span>
+          <span class="marquee__dot">·</span>
+        </div>
+      </div>
 
-@media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation:none !important;transition:none !important}
-  .q2,.q3,.q4,.run{opacity:0}
-  .up{transform:none}
-}
-</style>
-</head>
-<body>
-<div style="width: 100%; min-height: 100%; background: #FBF6EC; color: #16130F; font-family: 'Archivo', system-ui, sans-serif; overflow-x: hidden">
+      <!-- ============ QUÉ ES ============ -->
+      <section id="que-es" class="section container" aria-labelledby="que-es-titulo">
+        <header class="section-head reveal">
+          <p class="eyebrow">Qué es</p>
+          <h2 id="que-es-titulo" class="display display--xl">
+            Cuatro vueltas.
+            <span class="text-sky-dark">Cuatro birras.</span>
+          </h2>
+          <p class="section-head__lead">
+            La Beer Mile es una milla en pista con una regla simple: antes de cada vuelta de 400 metros te
+            tomás una lata. Se corre en todo el mundo desde los 80 y ahora llega a Córdoba.
+          </p>
+        </header>
 
-<svg width="0" height="0" style="position: absolute" aria-hidden="true"><defs><clipPath id="vasoClip" clipPathUnits="userSpaceOnUse"><path d="M10 8 L50 8 L44.5 82 L15.5 82 Z"></path></clipPath><clipPath id="mascotClip"><polygon points="4,6 72,6 64.5,92 11.5,92"></polygon></clipPath></defs></svg>
+        <div class="split">
+          <figure class="track reveal">
+            <div class="track__stage">
+              <svg
+                class="track__svg"
+                viewBox="0 0 520 300"
+                role="img"
+                aria-label="Pista de 400 metros con un corredor dando cuatro vueltas"
+              >
+                <rect class="track__lane" x="6" y="6" width="508" height="288" rx="144" />
+                <rect class="track__line" x="22" y="22" width="476" height="256" rx="128" />
+                <rect class="track__line" x="58" y="58" width="404" height="184" rx="92" />
+                <rect class="track__infield" x="74" y="74" width="372" height="152" rx="76" />
+                <line class="track__start" x1="150" y1="6" x2="150" y2="74" />
+                <rect
+                  class="track__runner"
+                  x="40"
+                  y="40"
+                  width="440"
+                  height="220"
+                  rx="110"
+                  pathLength="1000"
+                />
+              </svg>
+              <div class="track__hud" aria-hidden="true">
+                <div class="track__laps">
+                  <span class="track__lap" style="--lap: 0">Vuelta 1</span>
+                  <span class="track__lap" style="--lap: 1">Vuelta 2</span>
+                  <span class="track__lap" style="--lap: 2">Vuelta 3</span>
+                  <span class="track__lap" style="--lap: 3">Vuelta 4</span>
+                </div>
+                <div class="track__status">
+                  <span class="track__drink">Tomando</span>
+                  <span class="track__run">Corriendo</span>
+                </div>
+              </div>
+            </div>
+            <div class="track__glasses" aria-hidden="true">
+              <beer-glass motion="lap1"></beer-glass>
+              <beer-glass motion="lap2"></beer-glass>
+              <beer-glass motion="lap3"></beer-glass>
+              <beer-glass motion="lap4"></beer-glass>
+            </div>
+          </figure>
 
-<!-- NAV -->
-<header style="background: #16130F; position: sticky; top: 0; z-index: 10">
-<nav aria-label="Principal" style="max-width: 1280px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 32px">
-<a href="#top" class="ant" style="text-decoration: none; font-size: 30px; letter-spacing: 2px; color: #FBF6EC">BEER <span style="color: #4BB8E0">MILE</span></a>
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 32px; font-weight: 700; font-size: 15px; letter-spacing: 1.5px; text-transform: uppercase">
-<a class="navlink" href="#que-es">Qué es</a>
-<a class="navlink" href="#modalidades">Modalidades</a>
-<a class="navlink" href="#reglas">Reglas</a>
-</div>
-<a href="#lista" class="btn ant" style="text-decoration: none; background: #4BB8E0; color: #16130F; padding: 12px 22px; border-radius: 999px; font-size: 18px; min-height: 44px; display: inline-flex; align-items: center">Lista de espera</a>
-</nav>
-</header>
+          <ol class="laps reveal">
+            <li class="lap-card">
+              <span class="lap-card__num">01</span>
+              <div>
+                <h3 class="lap-card__title">Primera lata</h3>
+                <p>La tomás en la zona de cambio y salís a correr 400 metros.</p>
+              </div>
+            </li>
+            <li class="lap-card">
+              <span class="lap-card__num">02</span>
+              <div>
+                <h3 class="lap-card__title">Segunda lata</h3>
+                <p>Volvés a la zona, otra birra y otra vuelta.</p>
+              </div>
+            </li>
+            <li class="lap-card">
+              <span class="lap-card__num">03</span>
+              <div>
+                <h3 class="lap-card__title">Tercera lata</h3>
+                <p>Ya pasaste la mitad. Acá se gana o se pierde.</p>
+              </div>
+            </li>
+            <li class="lap-card">
+              <span class="lap-card__num">04</span>
+              <div>
+                <h3 class="lap-card__title">Última lata</h3>
+                <p>La última vuelta y a la meta. Gana quien cruza primero.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
 
-<!-- HERO -->
-<section id="top" class="hero" style="position: relative; max-width: 1280px; margin: 0 auto; padding: 64px 24px 80px; display: grid; gap: 40px; align-items: center">
-<div style="display: flex; flex-direction: column; gap: 26px">
-<div class="rise" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 12px; background: #D6ECF7; padding: 10px 18px; border-radius: 999px; font-weight: 700; font-size: 14px; letter-spacing: 4px; text-transform: uppercase">
-<span class="pulse" style="width: 10px; height: 10px; border-radius: 50%; background: #1F7FAE; display: inline-block"></span>
-Lista de espera abierta
-</div>
-<h1 class="ant" style="margin: 0; font-size: clamp(110px, 14vw, 220px); line-height: .9; display: flex; flex-direction: column">
-<span class="rise" style="animation-delay: .1s">BEER</span>
-<span class="rise" style="color: #2B9BCB; animation-delay: .25s">MILE</span>
-</h1>
-<p class="rise" style="margin: 0; font-weight: 700; font-size: clamp(24px, 2.4vw, 34px); line-height: 1.2; animation-delay: .4s">Una milla. Cuatro birras. Córdoba.</p>
-<p class="rise" style="margin: 0; font-size: 18px; line-height: 1.55; max-width: 520px; animation-delay: .5s">Cuatro vueltas a la pista y una birra antes de cada una. Estamos armando la primera edición: anotate y te avisamos antes que a nadie cuando salgan fecha y cupos.</p>
-<div class="rise" style="display: flex; flex-wrap: wrap; gap: 14px; animation-delay: .6s">
-<a href="#lista" class="btn btn-dark ant" style="text-decoration: none; background: #16130F; color: #FBF6EC; padding: 18px 32px; border-radius: 999px; font-size: 24px; min-height: 56px; display: inline-flex; align-items: center">Sumarme a la lista</a>
-<a href="#modalidades" class="btn btn-line ant" style="text-decoration: none; border: 3px solid #16130F; color: #16130F; padding: 15px 28px; border-radius: 999px; font-size: 24px; min-height: 56px; display: inline-flex; align-items: center">Ver modalidades</a>
-</div>
-</div>
+        <dl class="stats reveal">
+          <div class="stat">
+            <dt>Birras</dt>
+            <dd>4</dd>
+          </div>
+          <div class="stat">
+            <dt>Metros por vuelta</dt>
+            <dd>400</dd>
+          </div>
+          <div class="stat">
+            <dt>ml por lata</dt>
+            <dd>355</dd>
+          </div>
+          <div class="stat">
+            <dt>Metros a la meta</dt>
+            <dd>1.609</dd>
+          </div>
+        </dl>
+      </section>
 
-<div class="rise" style="position: relative; width: 100%; max-width: 580px; aspect-ratio: 1; justify-self: center; animation-delay: .3s">
-<div style="position: absolute; inset: 0; background: #2B9BCB; border-radius: 50%"></div>
-<svg viewBox="0 0 400 400" style="position: absolute; inset: -4%; width: 108%; height: 108%" aria-hidden="true">
-<circle class="spin" cx="200" cy="200" r="194" fill="none" stroke="#16130F" stroke-width="2" stroke-dasharray="10 12"></circle>
-</svg>
-<div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px">
-<div style="display: flex; gap: clamp(10px, 2vw, 22px); align-items: flex-end">
-<svg class="bob" viewBox="0 0 60 90" style="width: clamp(54px, 7vw, 92px); animation-delay: 0s" aria-hidden="true"><g clip-path="url(#vasoClip)"><g class="slosh"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg>
-<svg class="bob" viewBox="0 0 60 90" style="width: clamp(54px, 7vw, 92px); animation-delay: .25s" aria-hidden="true"><g clip-path="url(#vasoClip)"><g class="slosh" style="animation-delay: .3s"><rect x="0" y="26.5" width="60" height="60" fill="#F2B705"></rect><rect x="0" y="26.5" width="60" height="6" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg>
-<svg class="bob" viewBox="0 0 60 90" style="width: clamp(54px, 7vw, 92px); animation-delay: .5s" aria-hidden="true"><g clip-path="url(#vasoClip)"><g class="slosh" style="animation-delay: .6s"><rect x="0" y="45" width="60" height="45" fill="#F2B705"></rect><rect x="0" y="45" width="60" height="6" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg>
-<svg class="bob" viewBox="0 0 60 90" style="width: clamp(54px, 7vw, 92px); animation-delay: .75s" aria-hidden="true"><g clip-path="url(#vasoClip)"><g class="slosh" style="animation-delay: .9s"><rect x="0" y="63.5" width="60" height="30" fill="#F2B705"></rect><rect x="0" y="63.5" width="60" height="6" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg>
-</div>
-<div style="display: flex; gap: clamp(10px, 2vw, 22px); font-weight: 700; font-size: 14px; letter-spacing: 3px">
-<span style="width: clamp(54px, 7vw, 92px); text-align: center">V1</span>
-<span style="width: clamp(54px, 7vw, 92px); text-align: center">V2</span>
-<span style="width: clamp(54px, 7vw, 92px); text-align: center">V3</span>
-<span style="width: clamp(54px, 7vw, 92px); text-align: center">V4</span>
-</div>
-</div>
-</div>
-</section>
+      <!-- ============ FRASE ============ -->
+      <section class="quote-band" aria-labelledby="frase-titulo">
+        <div class="quote-band__inner container reveal">
+          <p class="quote-band__number" aria-hidden="true">
+            1.609
+            <span>m</span>
+          </p>
+          <div class="quote-band__text">
+            <h2 id="frase-titulo" class="display display--md">La milla más larga de tu vida</h2>
+            <p>
+              1.609 metros, cuatro birras y ninguna excusa. No hace falta ser atleta: hace falta terminar.
+            </p>
+          </div>
+          <svg class="mascot" viewBox="0 0 200 200" aria-hidden="true">
+            <defs>
+              <clipPath id="mascot-clip"><polygon points="4,6 72,6 64.5,92 11.5,92" /></clipPath>
+            </defs>
+            <ellipse class="mascot__shadow" cx="104" cy="190" rx="54" ry="6" />
+            <g transform="translate(62 30) rotate(8 37 62)">
+              <g class="mascot__speed">
+                <path d="M -44 22 H -20" />
+                <path d="M -56 46 H -24" />
+                <path d="M -42 70 H -18" />
+              </g>
+              <g class="mascot__limbs">
+                <path d="M 6 40 L -18 58 L -30 46" />
+                <path d="M 24 94 L 8 124 L -16 122" />
+                <path d="M 52 94 L 70 120 L 64 150 L 82 152" />
+                <path d="M 70 38 L 92 54 L 104 40" />
+              </g>
+              <polygon class="mascot__glass" points="0,0 76,0 68,96 8,96" />
+              <rect class="glass__liquid" x="0" y="14" width="76" height="84" clip-path="url(#mascot-clip)" />
+              <g class="mascot__foam">
+                <circle cx="12" cy="-2" r="14" />
+                <circle cx="32" cy="-12" r="17" />
+                <circle cx="54" cy="-8" r="15" />
+                <circle cx="70" cy="0" r="11" />
+              </g>
+            </g>
+          </svg>
+        </div>
+      </section>
 
-<!-- MARQUEE -->
-<div style="background: #16130F; overflow: hidden; padding: 22px 0" aria-hidden="true">
-<div class="mq ant" style="display: flex; width: max-content; gap: 40px; font-size: 44px; color: #FBF6EC; white-space: nowrap">
-<span>Una milla</span><span style="color: #4BB8E0">·</span><span>Cuatro birras</span><span style="color: #4BB8E0">·</span><span style="color: #4BB8E0">Córdoba</span><span style="color: #4BB8E0">·</span><span>Lista de espera abierta</span><span style="color: #4BB8E0">·</span>
-<span>Una milla</span><span style="color: #4BB8E0">·</span><span>Cuatro birras</span><span style="color: #4BB8E0">·</span><span style="color: #4BB8E0">Córdoba</span><span style="color: #4BB8E0">·</span><span>Lista de espera abierta</span><span style="color: #4BB8E0">·</span>
-</div>
-</div>
+      <!-- ============ MODALIDADES ============ -->
+      <section id="modalidades" class="modes" aria-labelledby="modalidades-titulo">
+        <div class="container container--narrow">
+          <header class="section-head reveal">
+            <p class="eyebrow">Modalidades</p>
+            <h2 id="modalidades-titulo" class="display display--xxl">Elegí tu carrera</h2>
+            <p class="section-head__lead">
+              Dos formas de correr la milla: solo contra el reloj o en equipo de cuatro. Pasá el mouse por
+              cada tarjeta y mirá cómo se vacían los vasos.
+            </p>
+          </header>
 
-<!-- QUÉ ES -->
-<section id="que-es" style="max-width: 1280px; margin: 0 auto; padding: 96px 24px 88px; display: flex; flex-direction: column; gap: 56px">
-<div class="rv" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; max-width: 820px; margin: 0 auto">
-<p style="margin: 0; font-weight: 700; font-size: 14px; letter-spacing: 6px; text-transform: uppercase">Qué es</p>
-<h2 class="ant" style="margin: 0; font-size: clamp(60px, 7vw, 104px); line-height: .95">Cuatro vueltas. <span style="color: #1F7FAE">Cuatro birras.</span></h2>
-<p style="margin: 0; font-size: 19px; line-height: 1.6">La Beer Mile es una milla en pista con una regla simple: antes de cada vuelta de 400 metros te tomás una lata. Se corre en todo el mundo desde los 80 y ahora llega a Córdoba.</p>
-</div>
+          <div class="modes__grid">
+            <article class="mode-card reveal" data-mode="individual">
+              <p class="tag">La clásica</p>
+              <div class="mode-card__glasses" aria-hidden="true">
+                <beer-glass style="--i: 0"></beer-glass>
+                <beer-glass style="--i: 1"></beer-glass>
+                <beer-glass style="--i: 2"></beer-glass>
+                <beer-glass style="--i: 3"></beer-glass>
+              </div>
+              <h3 class="display display--card">Individual</h3>
+              <p class="mode-card__desc">
+                La Beer Mile de siempre: las cuatro latas y las cuatro vueltas las hacés vos. Vos contra el
+                reloj.
+              </p>
+              <dl class="mode-card__facts">
+                <div>
+                  <dt>Corren</dt>
+                  <dd>1 persona</dd>
+                </div>
+                <div>
+                  <dt>Latas</dt>
+                  <dd>4 latas</dd>
+                </div>
+                <div>
+                  <dt>Distancia</dt>
+                  <dd>4 × 400 m</dd>
+                </div>
+              </dl>
+              <a class="btn btn--dark btn--block" href="#lista" data-pick-mode="individual">Quiero esta</a>
+            </article>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); gap: 48px; align-items: center">
-<figure class="rv" style="margin: 0; display: flex; flex-direction: column; gap: 24px; align-items: center">
-<div style="position: relative; width: 100%; max-width: 580px">
-<svg viewBox="0 0 520 300" style="width: 100%; display: block" role="img" aria-label="Pista de 400 metros con un corredor dando cuatro vueltas">
-<rect x="6" y="6" width="508" height="288" rx="144" fill="#2B9BCB"></rect>
-<rect x="22" y="22" width="476" height="256" rx="128" fill="none" stroke="#FBF6EC" stroke-width="2" opacity=".55"></rect>
-<rect x="58" y="58" width="404" height="184" rx="92" fill="none" stroke="#FBF6EC" stroke-width="2" opacity=".55"></rect>
-<rect x="74" y="74" width="372" height="152" rx="76" fill="#D6ECF7"></rect>
-<line x1="150" y1="6" x2="150" y2="74" stroke="#FBF6EC" stroke-width="5"></line>
-<rect class="runner" x="40" y="40" width="440" height="220" rx="110" pathLength="1000" fill="none" stroke="#16130F" stroke-width="14" stroke-linecap="round" stroke-dasharray="1 999"></rect>
-</svg>
-<div style="position: absolute; left: 22%; right: 22%; top: 30%; bottom: 30%">
-<div style="position: relative; height: 62%">
-<div class="q q1 ant" style="font-size: clamp(30px, 5vw, 52px)">Vuelta 1</div>
-<div class="q q2 ant" style="font-size: clamp(30px, 5vw, 52px)">Vuelta 2</div>
-<div class="q q3 ant" style="font-size: clamp(30px, 5vw, 52px)">Vuelta 3</div>
-<div class="q q4 ant" style="font-size: clamp(30px, 5vw, 52px)">Vuelta 4</div>
-</div>
-<div style="position: relative; height: 38%; font-weight: 700; font-size: clamp(11px, 1.4vw, 15px); letter-spacing: 4px; text-transform: uppercase">
-<div class="st drink">Tomando</div>
-<div class="st run">Corriendo</div>
-</div>
-</div>
-</div>
-<div style="display: flex; gap: 28px; align-items: flex-end">
-<svg viewBox="0 0 60 90" style="width: 56px" aria-hidden="true"><g clip-path="url(#vasoClip)"><g class="g1"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg>
-<svg viewBox="0 0 60 90" style="width: 56px" aria-hidden="true"><g clip-path="url(#vasoClip)"><g class="g2"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg>
-<svg viewBox="0 0 60 90" style="width: 56px" aria-hidden="true"><g clip-path="url(#vasoClip)"><g class="g3"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg>
-<svg viewBox="0 0 60 90" style="width: 56px" aria-hidden="true"><g clip-path="url(#vasoClip)"><g class="g4"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg>
-</div>
-</figure>
+            <article class="mode-card reveal" data-mode="postas">
+              <p class="tag">En equipo de 4</p>
+              <div class="mode-card__glasses mode-card__glasses--team" aria-hidden="true">
+                <span>
+                  <beer-glass style="--i: 0"></beer-glass>
+                  1
+                </span>
+                <span>
+                  <beer-glass style="--i: 1"></beer-glass>
+                  2
+                </span>
+                <span>
+                  <beer-glass style="--i: 2"></beer-glass>
+                  3
+                </span>
+                <span>
+                  <beer-glass style="--i: 3"></beer-glass>
+                  4
+                </span>
+              </div>
+              <h3 class="display display--card">Postas</h3>
+              <p class="mode-card__desc">
+                Una lata y una vuelta por persona. Armá el equipo con amigos, compañeros o tu grupo de
+                running.
+              </p>
+              <dl class="mode-card__facts">
+                <div>
+                  <dt>Corren</dt>
+                  <dd>4 personas</dd>
+                </div>
+                <div>
+                  <dt>Latas</dt>
+                  <dd>1 c/u</dd>
+                </div>
+                <div>
+                  <dt>Distancia</dt>
+                  <dd>400 m c/u</dd>
+                </div>
+              </dl>
+              <a class="btn btn--dark btn--block" href="#lista" data-pick-mode="postas">Quiero esta</a>
+            </article>
+          </div>
+        </div>
+      </section>
 
-<ol class="rv" style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px">
-<li class="lap" style="display: flex; gap: 20px; align-items: center; background: #FFFFFF; border: 3px solid #16130F; border-radius: 20px; padding: 18px 24px"><span class="ant" style="font-size: 44px; line-height: 1; color: #1F7FAE; min-width: 64px; text-align: center">01</span><span style="display: flex; flex-direction: column; gap: 2px"><strong class="ant" style="font-size: 24px; font-weight: 400">Primera lata</strong><span style="font-size: 16px; line-height: 1.45">La tomás en la zona de cambio y salís a correr 400 metros.</span></span></li>
-<li class="lap" style="display: flex; gap: 20px; align-items: center; background: #FFFFFF; border: 3px solid #16130F; border-radius: 20px; padding: 18px 24px"><span class="ant" style="font-size: 44px; line-height: 1; color: #1F7FAE; min-width: 64px; text-align: center">02</span><span style="display: flex; flex-direction: column; gap: 2px"><strong class="ant" style="font-size: 24px; font-weight: 400">Segunda lata</strong><span style="font-size: 16px; line-height: 1.45">Volvés a la zona, otra birra y otra vuelta.</span></span></li>
-<li class="lap" style="display: flex; gap: 20px; align-items: center; background: #FFFFFF; border: 3px solid #16130F; border-radius: 20px; padding: 18px 24px"><span class="ant" style="font-size: 44px; line-height: 1; color: #1F7FAE; min-width: 64px; text-align: center">03</span><span style="display: flex; flex-direction: column; gap: 2px"><strong class="ant" style="font-size: 24px; font-weight: 400">Tercera lata</strong><span style="font-size: 16px; line-height: 1.45">Ya pasaste la mitad. Acá se gana o se pierde.</span></span></li>
-<li class="lap" style="display: flex; gap: 20px; align-items: center; background: #FFFFFF; border: 3px solid #16130F; border-radius: 20px; padding: 18px 24px"><span class="ant" style="font-size: 44px; line-height: 1; color: #1F7FAE; min-width: 64px; text-align: center">04</span><span style="display: flex; flex-direction: column; gap: 2px"><strong class="ant" style="font-size: 24px; font-weight: 400">Última lata</strong><span style="font-size: 16px; line-height: 1.45">La última vuelta y a la meta. Gana quien cruza primero.</span></span></li>
-</ol>
-</div>
+      <!-- ============ REGLAS ============ -->
+      <section id="reglas" class="section container" aria-labelledby="reglas-titulo">
+        <header class="section-head reveal">
+          <p class="eyebrow">Reglas</p>
+          <h2 id="reglas-titulo" class="display display--lg">Lo que hay que saber</h2>
+        </header>
+        <ol class="rules">
+          <li class="rule-card reveal">
+            <span class="rule-card__num" aria-hidden="true">01</span>
+            <h3 class="rule-card__title">Zona de cambio</h3>
+            <p>
+              Cada lata se termina en la zona de cambio, antes de salir a la vuelta. Nada de tomar corriendo.
+            </p>
+          </li>
+          <li class="rule-card reveal">
+            <span class="rule-card__num" aria-hidden="true">02</span>
+            <h3 class="rule-card__title">355 ml, sin perforar</h3>
+            <p>Latas de 355 ml como mínimo. Se abren normal: nada de agujeritos para tomar más rápido.</p>
+          </li>
+          <li class="rule-card reveal">
+            <span class="rule-card__num" aria-hidden="true">03</span>
+            <h3 class="rule-card__title">Vuelta de penalidad</h3>
+            <p>Si devolvés antes de cruzar la meta, corrés una vuelta extra al final. Así es la ley.</p>
+          </li>
+          <li class="rule-card reveal">
+            <span class="rule-card__num" aria-hidden="true">04</span>
+            <h3 class="rule-card__title">Mayores de 18</h3>
+            <p>Para mayores de 18, con DNI en mano. No hace falta ser atleta: hace falta terminar.</p>
+          </li>
+        </ol>
+      </section>
 
-<div class="rv" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 0; border-top: 3px solid #16130F; border-bottom: 3px solid #16130F">
-<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; padding: 28px 12px"><span class="ant" style="font-size: 88px; line-height: 1; color: #1F7FAE">4</span><span style="font-weight: 700; font-size: 14px; letter-spacing: 4px; text-transform: uppercase">Birras</span></div>
-<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; padding: 28px 12px"><span class="ant" style="font-size: 88px; line-height: 1; color: #1F7FAE">400</span><span style="font-weight: 700; font-size: 14px; letter-spacing: 4px; text-transform: uppercase">Metros por vuelta</span></div>
-<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; padding: 28px 12px"><span class="ant" style="font-size: 88px; line-height: 1; color: #1F7FAE">355</span><span style="font-weight: 700; font-size: 14px; letter-spacing: 4px; text-transform: uppercase">ml por lata</span></div>
-<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; padding: 28px 12px"><span class="ant" style="font-size: 88px; line-height: 1; color: #1F7FAE">1.609</span><span style="font-weight: 700; font-size: 14px; letter-spacing: 4px; text-transform: uppercase">Metros a la meta</span></div>
-</div>
-</section>
+      <!-- ============ LISTA DE ESPERA ============ -->
+      <section id="lista" class="waitlist" aria-labelledby="lista-titulo">
+        <div class="container container--form">
+          <header class="section-head reveal">
+            <p class="eyebrow">Lista de espera</p>
+            <h2 id="lista-titulo" class="display display--xxl">
+              Anotate en
+              <span class="text-sky-light">la lista</span>
+            </h2>
+            <p class="section-head__lead">
+              Todavía no abrimos inscripciones. Dejá tus datos y te escribimos primero cuando salgan fecha,
+              pista y cupos. Sin spam: un mail cuando haya novedades. Y el día a día, en
+              <a
+                class="link-sky"
+                href="https://www.instagram.com/thebeermile.arg/"
+                target="_blank"
+                rel="noopener"
+                >@thebeermile.arg</a
+              >.
+            </p>
+            <ul class="perks">
+              <li>
+                <span>01</span>
+                Prioridad en los cupos
+              </li>
+              <li>
+                <span>02</span>
+                Fecha y lugar antes que nadie
+              </li>
+              <li>
+                <span>03</span>
+                Nos ayudás a armar los cupos
+              </li>
+            </ul>
+          </header>
 
-<!-- FRASE BAND -->
-<section aria-labelledby="cero-titulo" style="background: #D6ECF7; padding: 72px 24px">
-<div class="rv" style="max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 40px 64px; text-align: center">
-<span class="ant zero" style="font-size: clamp(120px, 14vw, 200px); line-height: .85; display: inline-block">1.609<span style="color: #1F7FAE"> m</span></span>
-<div style="flex: 1 1 380px; max-width: 520px; display: flex; flex-direction: column; gap: 14px; align-items: center">
-<h2 id="cero-titulo" class="ant" style="margin: 0; font-size: clamp(40px, 4vw, 56px); line-height: 1">La milla más larga de tu vida</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.55">1.609 metros, cuatro birras y ninguna excusa. No hace falta ser atleta: hace falta terminar.</p>
-</div>
-<svg class="mascot" viewBox="0 0 200 200" style="width: 160px; flex: none" aria-hidden="true">
-<ellipse cx="104" cy="190" rx="54" ry="6" fill="#1F7FAE"></ellipse>
-<g transform="translate(62 30) scale(1) rotate(8 37 62)">
-<g fill="none" stroke="#16130F" stroke-width="4" stroke-linecap="round" opacity=".6"><path d="M -44 22 H -20"></path><path d="M -56 46 H -24"></path><path d="M -42 70 H -18"></path></g>
-<g fill="none" stroke="#16130F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M 6 40 L -18 58 L -30 46"></path><path d="M 24 94 L 8 124 L -16 122"></path><path d="M 52 94 L 70 120 L 64 150 L 82 152"></path><path d="M 70 38 L 92 54 L 104 40"></path></g>
-<polygon points="0,0 76,0 68,96 8,96" fill="#FBF6EC" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></polygon>
-<rect x="0" y="14" width="76" height="84" fill="#F2B705" clip-path="url(#mascotClip)"></rect>
-<g fill="#FFFFFF" stroke="#16130F" stroke-width="3"><circle cx="12" cy="-2" r="14"></circle><circle cx="32" cy="-12" r="17"></circle><circle cx="54" cy="-8" r="15"></circle><circle cx="70" cy="0" r="11"></circle></g>
-</g>
-</svg>
-</div>
-</section>
+          <div class="form-card">
+            <!-- Netlify Forms detecta este formulario en el deploy (data-netlify). -->
+            <form
+              class="waitlist-form"
+              name="lista-de-espera"
+              method="POST"
+              action="/gracias"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="lista-de-espera" />
+              <p class="sr-only">
+                <label>
+                  No completar este campo:
+                  <input type="text" name="bot-field" tabindex="-1" autocomplete="off" />
+                </label>
+              </p>
 
-<!-- MODALIDADES -->
-<section id="modalidades" style="background: #2B9BCB; padding: 96px 24px">
-<div style="max-width: 1080px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
-<div class="rv" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px">
-<p style="margin: 0; font-weight: 700; font-size: 14px; letter-spacing: 6px; text-transform: uppercase">Modalidades</p>
-<h2 class="ant" style="margin: 0; font-size: clamp(64px, 8vw, 120px); line-height: .92">Elegí tu carrera</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.55; max-width: 560px">Dos formas de correr la milla: solo contra el reloj o en equipo de cuatro. Pasá el mouse por cada tarjeta y mirá cómo se vacían los vasos.</p>
-</div>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="nombre">Nombre</label>
+                  <input
+                    id="nombre"
+                    name="nombre"
+                    type="text"
+                    autocomplete="name"
+                    required
+                    placeholder="Cómo te llamás"
+                  />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                    placeholder="vos@mail.com"
+                  />
+                </div>
+                <div class="field">
+                  <label for="instagram">
+                    Instagram
+                    <span class="field__optional">(opcional)</span>
+                  </label>
+                  <input
+                    id="instagram"
+                    name="instagram"
+                    type="text"
+                    autocomplete="off"
+                    placeholder="@tuusuario"
+                  />
+                </div>
+              </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 32px; align-items: stretch">
+              <fieldset class="field">
+                <legend>¿Qué modalidad te tienta?</legend>
+                <div class="choices">
+                  <label class="choice">
+                    <input type="radio" name="modalidad" value="individual" checked />
+                    <span>Individual</span>
+                  </label>
+                  <label class="choice">
+                    <input type="radio" name="modalidad" value="postas" />
+                    <span>Postas</span>
+                  </label>
+                  <label class="choice">
+                    <input type="radio" name="modalidad" value="nose" />
+                    <span>No sé todavía</span>
+                  </label>
+                </div>
+              </fieldset>
 
-<article class="mcard rv" style="background: #FBF6EC; border: 3px solid #16130F; border-radius: 28px; padding: 36px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px; " data-card="individual">
-<span style="background: #16130F; color: #FBF6EC; font-weight: 700; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; padding: 6px 14px; border-radius: 999px">La clásica</span>
-<div style="display: flex; gap: 12px; align-items: flex-end; height: 76px" aria-hidden="true">
-<svg viewBox="0 0 60 90" style="width: 48px"><g clip-path="url(#vasoClip)"><g class="cl"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg>
-<svg viewBox="0 0 60 90" style="width: 48px"><g clip-path="url(#vasoClip)"><g class="cl d2"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg>
-<svg viewBox="0 0 60 90" style="width: 48px"><g clip-path="url(#vasoClip)"><g class="cl d3"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg>
-<svg viewBox="0 0 60 90" style="width: 48px"><g clip-path="url(#vasoClip)"><g class="cl d4"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg>
-</div>
-<h3 class="ant" style="margin: 0; font-size: 76px; line-height: 1">Individual</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.55; max-width: 360px">La Beer Mile de siempre: las cuatro latas y las cuatro vueltas las hacés vos. Vos contra el reloj.</p>
-<dl style="margin: 0; width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; border-top: 2px solid #16130F; border-bottom: 2px solid #16130F; padding: 16px 0">
-<div style="display: flex; flex-direction: column; gap: 4px"><dt style="font-weight: 700; font-size: 12px; letter-spacing: 3px; text-transform: uppercase">Corren</dt><dd class="ant" style="margin: 0; font-size: 26px">1 persona</dd></div>
-<div style="display: flex; flex-direction: column; gap: 4px"><dt style="font-weight: 700; font-size: 12px; letter-spacing: 3px; text-transform: uppercase">Latas</dt><dd class="ant" style="margin: 0; font-size: 26px">4 latas</dd></div>
-<div style="display: flex; flex-direction: column; gap: 4px"><dt style="font-weight: 700; font-size: 12px; letter-spacing: 3px; text-transform: uppercase">Distancia</dt><dd class="ant" style="margin: 0; font-size: 26px">4 × 400 m</dd></div>
-</dl>
-<a href="#lista" data-pick="individual" class="btn btn-dark ant" style="margin-top: auto; align-self: stretch; text-decoration: none; text-align: center; background: #16130F; color: #FBF6EC; padding: 16px 24px; border-radius: 999px; font-size: 22px; min-height: 52px">Quiero esta</a>
-</article>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="experiencia">Experiencia</label>
+                  <select id="experiencia" name="experiencia">
+                    <option value="nunca">Nunca corrí una</option>
+                    <option value="ya">Ya corrí una Beer Mile</option>
+                    <option value="runner">Corro, pero nunca con latas</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="milla">Tu milla sin latas</label>
+                  <select id="milla" name="milla">
+                    <option value="nose">Ni idea</option>
+                    <option value="-6">Menos de 6 min</option>
+                    <option value="6-8">Entre 6 y 8 min</option>
+                    <option value="8-10">Entre 8 y 10 min</option>
+                    <option value="+10">Más de 10 min</option>
+                  </select>
+                </div>
+              </div>
 
-<article class="mcard rv" style="background: #FBF6EC; border: 3px solid #16130F; border-radius: 28px; padding: 36px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px; " data-card="postas">
-<span style="background: #16130F; color: #FBF6EC; font-weight: 700; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; padding: 6px 14px; border-radius: 999px">En equipo de 4</span>
-<div style="display: flex; gap: 14px; align-items: flex-end; height: 76px" aria-hidden="true">
-<div style="display: flex; flex-direction: column; align-items: center; gap: 2px"><svg viewBox="0 0 60 90" style="width: 38px"><g clip-path="url(#vasoClip)"><g class="cl"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg><span class="ant" style="font-size: 14px">1</span></div>
-<div style="display: flex; flex-direction: column; align-items: center; gap: 2px"><svg viewBox="0 0 60 90" style="width: 38px"><g clip-path="url(#vasoClip)"><g class="cl d2"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg><span class="ant" style="font-size: 14px">2</span></div>
-<div style="display: flex; flex-direction: column; align-items: center; gap: 2px"><svg viewBox="0 0 60 90" style="width: 38px"><g clip-path="url(#vasoClip)"><g class="cl d3"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg><span class="ant" style="font-size: 14px">3</span></div>
-<div style="display: flex; flex-direction: column; align-items: center; gap: 2px"><svg viewBox="0 0 60 90" style="width: 38px"><g clip-path="url(#vasoClip)"><g class="cl d4"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg><span class="ant" style="font-size: 14px">4</span></div>
-</div>
-<h3 class="ant" style="margin: 0; font-size: 76px; line-height: 1">Postas</h3>
-<p style="margin: 0; font-size: 17px; line-height: 1.55; max-width: 360px">Una lata y una vuelta por persona. Armá el equipo con amigos, compañeros o tu grupo de running.</p>
-<dl style="margin: 0; width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; border-top: 2px solid #16130F; border-bottom: 2px solid #16130F; padding: 16px 0">
-<div style="display: flex; flex-direction: column; gap: 4px"><dt style="font-weight: 700; font-size: 12px; letter-spacing: 3px; text-transform: uppercase">Corren</dt><dd class="ant" style="margin: 0; font-size: 26px">4 personas</dd></div>
-<div style="display: flex; flex-direction: column; gap: 4px"><dt style="font-weight: 700; font-size: 12px; letter-spacing: 3px; text-transform: uppercase">Latas</dt><dd class="ant" style="margin: 0; font-size: 26px">1 c/u</dd></div>
-<div style="display: flex; flex-direction: column; gap: 4px"><dt style="font-weight: 700; font-size: 12px; letter-spacing: 3px; text-transform: uppercase">Distancia</dt><dd class="ant" style="margin: 0; font-size: 26px">400 m c/u</dd></div>
-</dl>
-<a href="#lista" data-pick="postas" class="btn btn-dark ant" style="margin-top: auto; align-self: stretch; text-decoration: none; text-align: center; background: #16130F; color: #FBF6EC; padding: 16px 24px; border-radius: 999px; font-size: 22px; min-height: 52px">Quiero esta</a>
-</article>
+              <label class="check">
+                <input type="checkbox" name="mayor" value="si" required />
+                <span>
+                  Tengo 18 años o más y acepto que me escriban por email sobre la Beer Mile Córdoba.
+                </span>
+              </label>
 
-</div>
-</div>
-</section>
+              <button class="btn btn--dark btn--xl btn--block" type="submit">Sumarme a la lista</button>
+              <p class="form-error" role="alert" hidden>
+                No pudimos guardar tus datos. Probá de nuevo en un rato.
+              </p>
+            </form>
 
-<!-- REGLAS -->
-<section id="reglas" style="max-width: 1280px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
-<div class="rv" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px">
-<p style="margin: 0; font-weight: 700; font-size: 14px; letter-spacing: 6px; text-transform: uppercase">Reglas</p>
-<h2 class="ant" style="margin: 0; font-size: clamp(56px, 6vw, 88px); line-height: .95">Lo que hay que saber</h2>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 24px">
-<div class="rule rv" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; background: #FFFFFF; border: 3px solid #16130F; border-radius: 24px; padding: 32px 24px"><span class="ant" style="font-size: 64px; line-height: 1; color: #1F7FAE">01</span><h3 class="ant" style="margin: 0; font-size: 28px">Zona de cambio</h3><p style="margin: 0; font-size: 16px; line-height: 1.55">Cada lata se termina en la zona de cambio, antes de salir a la vuelta. Nada de tomar corriendo.</p></div>
-<div class="rule rv" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; background: #FFFFFF; border: 3px solid #16130F; border-radius: 24px; padding: 32px 24px"><span class="ant" style="font-size: 64px; line-height: 1; color: #1F7FAE">02</span><h3 class="ant" style="margin: 0; font-size: 28px">355 ml, sin perforar</h3><p style="margin: 0; font-size: 16px; line-height: 1.55">Latas de 355 ml como mínimo. Se abren normal: nada de agujeritos para tomar más rápido.</p></div>
-<div class="rule rv" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; background: #FFFFFF; border: 3px solid #16130F; border-radius: 24px; padding: 32px 24px"><span class="ant" style="font-size: 64px; line-height: 1; color: #1F7FAE">03</span><h3 class="ant" style="margin: 0; font-size: 28px">Vuelta de penalidad</h3><p style="margin: 0; font-size: 16px; line-height: 1.55">Si devolvés antes de cruzar la meta, corrés una vuelta extra al final. Así es la ley.</p></div>
-<div class="rule rv" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; background: #FFFFFF; border: 3px solid #16130F; border-radius: 24px; padding: 32px 24px"><span class="ant" style="font-size: 64px; line-height: 1; color: #1F7FAE">04</span><h3 class="ant" style="margin: 0; font-size: 28px">Mayores de 18</h3><p style="margin: 0; font-size: 16px; line-height: 1.55">Para mayores de 18, con DNI en mano. No hace falta ser atleta: hace falta terminar.</p></div>
-</div>
-</section>
+            <div class="success" role="status" tabindex="-1" hidden>
+              <div class="success__glasses" aria-hidden="true">
+                <beer-glass motion="pour" style="--i: 0"></beer-glass>
+                <beer-glass motion="pour" style="--i: 1"></beer-glass>
+                <beer-glass motion="pour" style="--i: 2"></beer-glass>
+                <beer-glass motion="pour" style="--i: 3"></beer-glass>
+              </div>
+              <h3 class="display display--lg">
+                Listo,
+                <span data-success="nombre">crack</span>.
+              </h3>
+              <p class="success__lead">
+                Ya estás en la lista para
+                <strong data-success="modalidad"></strong>. Te vamos a escribir a
+                <strong data-success="email"></strong>
+                apenas abran las inscripciones.
+              </p>
+              <p>
+                Mientras tanto, seguinos en
+                <a href="https://www.instagram.com/thebeermile.arg/" target="_blank" rel="noopener"
+                  >@thebeermile.arg</a
+                >
+                y empezá a entrenar la milla.
+              </p>
+              <button class="btn btn--outline" type="button" data-action="reset">Anotar a alguien más</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-<!-- WISHLIST -->
-<section id="lista" style="background: #16130F; color: #FBF6EC; padding: 96px 24px">
-<div style="max-width: 880px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 40px">
-<div class="rv" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px">
-<p style="margin: 0; font-weight: 700; font-size: 14px; letter-spacing: 6px; text-transform: uppercase">Lista de espera</p>
-<h2 class="ant" style="margin: 0; font-size: clamp(64px, 8vw, 120px); line-height: .92">Anotate en <span style="color: #4BB8E0">la lista</span></h2>
-<p style="margin: 0; font-size: 19px; line-height: 1.6; max-width: 600px">Todavía no abrimos inscripciones. Dejá tus datos y te escribimos primero cuando salgan fecha, pista y cupos. Sin spam: un mail cuando haya novedades. Y el día a día, en <a href="https://www.instagram.com/thebeermile.arg/" target="_blank" rel="noopener" style="color: #4BB8E0; font-weight: 700">@thebeermile.arg</a>.</p>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px">
-<li style="display: flex; gap: 10px; align-items: center; border: 2px solid #4BB8E0; border-radius: 999px; padding: 10px 18px; font-size: 16px"><span class="ant" style="color: #4BB8E0; font-size: 20px">01</span>Prioridad en los cupos</li>
-<li style="display: flex; gap: 10px; align-items: center; border: 2px solid #4BB8E0; border-radius: 999px; padding: 10px 18px; font-size: 16px"><span class="ant" style="color: #4BB8E0; font-size: 20px">02</span>Fecha y lugar antes que nadie</li>
-<li style="display: flex; gap: 10px; align-items: center; border: 2px solid #4BB8E0; border-radius: 999px; padding: 10px 18px; font-size: 16px"><span class="ant" style="color: #4BB8E0; font-size: 20px">03</span>Nos ayudás a armar los cupos</li>
-</ul>
-</div>
-
-<div style="width: 100%; background: #FBF6EC; color: #16130F; border-radius: 28px; padding: clamp(24px, 4vw, 48px)">
-<form id="wl-form" name="lista-de-espera" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="display: flex; flex-direction: column; gap: 22px">
-<input type="hidden" name="form-name" value="lista-de-espera">
-<p class="hp"><label>No completar: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 18px">
-<div style="display: flex; flex-direction: column; gap: 8px">
-<label for="nombre" style="font-weight: 700; font-size: 14px; letter-spacing: 2px; text-transform: uppercase">Nombre</label>
-<input id="nombre" name="nombre" class="field" type="text" autocomplete="given-name" required="required" placeholder="Cómo te llamás">
-</div>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<label for="email" style="font-weight: 700; font-size: 14px; letter-spacing: 2px; text-transform: uppercase">Email</label>
-<input id="email" name="email" class="field" type="email" autocomplete="email" required="required" placeholder="vos@mail.com">
-</div>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<label for="ig" style="font-weight: 700; font-size: 14px; letter-spacing: 2px; text-transform: uppercase">Instagram <span style="font-weight: 400; text-transform: none; letter-spacing: 0">(opcional)</span></label>
-<input id="ig" name="instagram" class="field" type="text" placeholder="@tuusuario">
-</div>
-</div>
-<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 10px">
-<legend style="font-weight: 700; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; padding: 0; margin-bottom: 10px">¿Qué modalidad te tienta?</legend>
-<div style="display: flex; flex-wrap: wrap; gap: 10px">
-<button type="button" class="chip" data-mod="individual" aria-pressed="true" style="font: 700 16px 'Archivo', system-ui, sans-serif; letter-spacing: 1px; min-height: 48px; padding: 12px 22px; border-radius: 999px; border: 2px solid #16130F; cursor: pointer; background: transparent; color: #16130F">Individual</button>
-<button type="button" class="chip" data-mod="postas" aria-pressed="false" style="font: 700 16px 'Archivo', system-ui, sans-serif; letter-spacing: 1px; min-height: 48px; padding: 12px 22px; border-radius: 999px; border: 2px solid #16130F; cursor: pointer; background: transparent; color: #16130F">Postas</button>
-<button type="button" class="chip" data-mod="nose" aria-pressed="false" style="font: 700 16px 'Archivo', system-ui, sans-serif; letter-spacing: 1px; min-height: 48px; padding: 12px 22px; border-radius: 999px; border: 2px solid #16130F; cursor: pointer; background: transparent; color: #16130F">No sé todavía</button>
-</div>
-<input type="hidden" name="modalidad" value="individual">
-</fieldset>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 18px">
-<div style="display: flex; flex-direction: column; gap: 8px">
-<label for="exp" style="font-weight: 700; font-size: 14px; letter-spacing: 2px; text-transform: uppercase">Experiencia</label>
-<select id="exp" name="experiencia" class="field">
-<option value="nunca">Nunca corrí una</option>
-<option value="ya">Ya corrí una Beer Mile</option>
-<option value="runner">Corro, pero nunca con latas</option>
-</select>
-</div>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<label for="milla" style="font-weight: 700; font-size: 14px; letter-spacing: 2px; text-transform: uppercase">Tu milla sin latas</label>
-<select id="milla" name="milla" class="field">
-<option value="nose">Ni idea</option>
-<option value="-6">Menos de 6 min</option>
-<option value="6-8">Entre 6 y 8 min</option>
-<option value="8-10">Entre 8 y 10 min</option>
-<option value="+10">Más de 10 min</option>
-</select>
-</div>
-</div>
-<label style="display: flex; gap: 14px; align-items: flex-start; font-size: 16px; line-height: 1.45; cursor: pointer">
-<input type="checkbox" name="mayor" required="required" style="width: 24px; height: 24px; margin: 0; flex: none; accent-color: #16130F">
-<span>Tengo 18 años o más y acepto que me escriban por email sobre la Beer Mile Córdoba.</span>
-</label>
-<button type="submit" class="btn btn-dark ant" style="border: 0; cursor: pointer; background: #16130F; color: #FBF6EC; padding: 20px 28px; border-radius: 999px; font-size: 28px; min-height: 60px">Sumarme a la lista</button>
-</form>
-<p id="wl-error" role="alert" hidden style="margin: 16px 0 0; font-weight: 700">No pudimos guardar tus datos. Probá de nuevo en un rato.</p>
-
-<div id="wl-ok" hidden>
-<div class="pop" role="status" style="display: flex; flex-direction: column; gap: 22px; align-items: center; text-align: center; min-height: 460px; justify-content: center">
-<div style="display: flex; gap: 14px; align-items: flex-end" aria-hidden="true">
-<svg viewBox="0 0 60 90" style="width: 64px"><g clip-path="url(#vasoClip)"><g class="up"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg>
-<svg viewBox="0 0 60 90" style="width: 64px"><g clip-path="url(#vasoClip)"><g class="up" style="animation-delay: .2s"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg>
-<svg viewBox="0 0 60 90" style="width: 64px"><g clip-path="url(#vasoClip)"><g class="up" style="animation-delay: .4s"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg>
-<svg viewBox="0 0 60 90" style="width: 64px"><g clip-path="url(#vasoClip)"><g class="up" style="animation-delay: .6s"><rect x="0" y="8" width="60" height="80" fill="#F2B705"></rect><rect x="0" y="8" width="60" height="7" fill="#FFFFFF"></rect></g></g><path d="M8 6 L52 6 L46 84 L14 84 Z" fill="none" stroke="#16130F" stroke-width="4" stroke-linejoin="round"></path></svg>
-</div>
-<h3 class="ant" style="margin: 0; font-size: clamp(56px, 6vw, 84px); line-height: .95">Listo, <span id="ok-nombre"></span>.</h3>
-<p style="margin: 0; font-size: 19px; line-height: 1.55; max-width: 520px">Ya estás en la lista para <strong id="ok-mod"></strong>. Te vamos a escribir a <strong id="ok-email"></strong> apenas abran las inscripciones.</p>
-<p style="margin: 0; font-size: 16px; line-height: 1.5">Mientras tanto, seguinos en <a href="https://www.instagram.com/thebeermile.arg/" target="_blank" rel="noopener" style="font-weight: 700">@thebeermile.arg</a> y empezá a entrenar la milla.</p>
-<button type="button" id="wl-reset" class="btn btn-line ant" style="cursor: pointer; background: transparent; border: 3px solid #16130F; color: #16130F; padding: 14px 26px; border-radius: 999px; font-size: 20px; min-height: 52px">Anotar a alguien más</button>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- FOOTER -->
-<footer style="background: #16130F; color: #FBF6EC; border-top: 2px solid #FBF6EC; padding: 48px 24px 40px">
-<div style="max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px">
-<span class="ant" style="font-size: 64px; line-height: 1">BEER <span style="color: #4BB8E0">MILE</span></span>
-<span style="font-weight: 700; font-size: 14px; letter-spacing: 6px; text-transform: uppercase">Córdoba · Argentina</span>
-<a href="https://www.instagram.com/thebeermile.arg/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; color: #4BB8E0; font-weight: 700; font-size: 18px; min-height: 44px"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg>@thebeermile.arg</a>
-<p style="margin: 0; font-size: 14px; line-height: 1.5; max-width: 560px">Evento para mayores de 18 años.</p>
-</div>
-</footer>
-
-</div>
-<script>
-(function () {
-  var labels = { individual: 'Individual', postas: 'Postas', nose: 'No sé todavía' };
-  var form = document.getElementById('wl-form');
-  var ok = document.getElementById('wl-ok');
-  var err = document.getElementById('wl-error');
-  var modInput = form.querySelector('input[name="modalidad"]');
-  var chips = form.querySelectorAll('.chip');
-  var cards = document.querySelectorAll('[data-card]');
-
-  function pick(mod) {
-    modInput.value = mod;
-    chips.forEach(function (c) { c.setAttribute('aria-pressed', c.dataset.mod === mod ? 'true' : 'false'); });
-    cards.forEach(function (c) { c.classList.toggle('is-picked', c.dataset.card === mod); });
-  }
-  chips.forEach(function (c) { c.addEventListener('click', function () { pick(c.dataset.mod); }); });
-  document.querySelectorAll('[data-pick]').forEach(function (a) {
-    a.addEventListener('click', function () { pick(a.dataset.pick); });
-  });
-  pick('individual');
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    err.hidden = true;
-    var btn = form.querySelector('button[type="submit"]');
-    btn.disabled = true;
-    var data = new FormData(form);
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(data).toString()
-    }).then(function (res) {
-      if (!res.ok) throw new Error(res.status);
-      var nombre = String(data.get('nombre') || '').trim().split(' ')[0] || 'crack';
-      var mod = data.get('modalidad');
-      document.getElementById('ok-nombre').textContent = nombre;
-      document.getElementById('ok-mod').textContent = mod === 'nose' ? 'la modalidad que elijas' : labels[mod];
-      document.getElementById('ok-email').textContent = String(data.get('email') || '');
-      form.style.display = 'none';
-      ok.hidden = false;
-    }).catch(function () {
-      err.hidden = false;
-    }).finally(function () {
-      btn.disabled = false;
-    });
-  });
-
-  document.getElementById('wl-reset').addEventListener('click', function () {
-    form.reset();
-    pick('individual');
-    ok.hidden = true;
-    form.style.display = '';
-    form.querySelector('#nombre').focus();
-  });
-})();
-</script>
-</body>
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p class="wordmark wordmark--footer">
+          Beer
+          <span class="wordmark__mile">Mile</span>
+        </p>
+        <p class="eyebrow">Córdoba · Argentina</p>
+        <a
+          class="instagram-link"
+          href="https://www.instagram.com/thebeermile.arg/"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle class="instagram-link__dot" cx="17.5" cy="6.5" r="1" />
+          </svg>
+          @thebeermile.arg
+        </a>
+        <p class="site-footer__legal">Evento para mayores de 18 años.</p>
+      </div>
+    </footer>
+  </body>
 </html>

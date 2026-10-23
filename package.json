@@ -1,0 +1,14 @@
+{
+  "name": "thebeermile-arg",
+  "private": true,
+  "description": "Landing de la Beer Mile Córdoba (@thebeermile.arg)",
+  "scripts": {
+    "dev": "npx --yes serve -l 8080 .",
+    "format": "prettier --write .",
+    "lint": "prettier --check . && html-validate \"*.html\""
+  },
+  "devDependencies": {
+    "html-validate": "9.4.1",
+    "prettier": "3.5.3"
+  }
+}
