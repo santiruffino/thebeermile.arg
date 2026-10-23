@@ -1,0 +1,16 @@
+[build]
+  publish = "."
+  # Netlify define URL con la dirección principal del sitio (o el dominio propio si lo agregás).
+  # Se usa para las URLs absolutas que piden las vistas previas de WhatsApp, Instagram, etc.
+  command = "sed -i \"s|__SITE_URL__|${URL}|g\" index.html"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/og-image.png"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
