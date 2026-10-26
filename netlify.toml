@@ -26,3 +26,88 @@
   for = "/assets/img/*"
   [headers.values]
     Cache-Control = "public, max-age=86400"
+
+# ---------------------------------------------------------------------------
+# Escaneos de bots
+# Bots automáticos prueban rutas de WordPress, PHP y archivos de configuración
+# que este sitio no tiene. En vez de servirles la página 404 completa, les
+# devolvemos un 404 de una línea (blocked.txt): menos ancho de banda y nada de
+# HTML ni scripts de analytics. Para sumar rutas, copiá un bloque.
+# ---------------------------------------------------------------------------
+[[redirects]]
+  from = "/wp-admin/*"
+  to = "/blocked.txt"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/wp-content/*"
+  to = "/blocked.txt"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/wp-includes/*"
+  to = "/blocked.txt"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/wordpress/*"
+  to = "/blocked.txt"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/wp/*"
+  to = "/blocked.txt"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/wp-login.php"
+  to = "/blocked.txt"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/xmlrpc.php"
+  to = "/blocked.txt"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/.env"
+  to = "/blocked.txt"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/.git/*"
+  to = "/blocked.txt"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/.aws/*"
+  to = "/blocked.txt"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/phpmyadmin/*"
+  to = "/blocked.txt"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/vendor/*"
+  to = "/blocked.txt"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/cgi-bin/*"
+  to = "/blocked.txt"
+  status = 404
+  force = true
