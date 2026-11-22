@@ -836,7 +836,8 @@ beer-glass[level="25"] .glass__fill {
   transform: translateY(-10px) rotate(-1deg);
 }
 /* La tarjeta de la modalidad elegida en el formulario queda resaltada */
-body:has(input[name="modalidad"][value="individual"]:checked) [data-mode="individual"],
+body:has(input[name="modalidad"][value="individual"]:checked)
+  [data-mode="individual"],
 body:has(input[name="modalidad"][value="postas"]:checked) [data-mode="postas"] {
   outline: 4px solid var(--negro);
 }
@@ -1384,4 +1385,99 @@ body:has(input[name="modalidad"][value="postas"]:checked) [data-mode="postas"] {
 .simple-page__lead {
   max-width: 520px;
   font-size: 19px;
+}
+
+/* ---------- Inscripción (.reg-*) ---------- */
+.reg-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 0 0 2rem;
+  padding: 0;
+}
+.reg-facts div {
+  background: var(--celeste-suave);
+  border: 2px solid var(--negro);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+}
+.reg-facts dt {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--celeste-oscuro);
+}
+.reg-facts dd {
+  margin: 0.25rem 0 0;
+  font-weight: 700;
+  color: var(--negro);
+}
+.reg-facts--light {
+  margin-top: 1.5rem;
+}
+.reg-subtitle {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.75rem;
+  color: var(--negro);
+}
+.reg-team {
+  margin-bottom: 1rem;
+}
+.field__hint {
+  font-size: 0.875rem;
+  color: var(--celeste-oscuro);
+  margin: 0.4rem 0 0;
+}
+.field__optional {
+  font-weight: 400;
+  opacity: 0.7;
+}
+.reg-legal {
+  margin: 1.25rem 0;
+  border: 2px solid var(--negro);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  background: var(--crema);
+}
+.reg-legal summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+.reg-code {
+  font-family: "Anton", sans-serif;
+  font-size: clamp(2.5rem, 10vw, 4rem);
+  line-height: 1;
+  margin: 0.25rem 0 1rem;
+  color: var(--negro);
+}
+.reg-upload {
+  margin-top: 1.5rem;
+}
+.reg-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+.reg-links li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+.reg-links input {
+  flex: 1 1 14rem;
+  min-width: 0;
+}
+.reg-uploaded {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 2px solid var(--negro);
+  border-radius: 12px;
+  background: var(--celeste-suave);
+  font-weight: 700;
+}
+.reg-done:focus {
+  outline: none;
 }

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-71ZKDXPK2P"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-71ZKDXPK2P");
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tus datos del equipo · Beer Mile Córdoba</title>
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#16130F">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/inscripcion.js" defer></script>
+    <!-- Metricool -->
+    <script>
+      function loadScript(a) {
+        var b = document.getElementsByTagName("head")[0],
+          c = document.createElement("script");
+        (c.type = "text/javascript"),
+          (c.src = "https://tracker.metricool.com/resources/be.js"),
+          (c.onreadystatechange = a),
+          (c.onload = a),
+          b.appendChild(c);
+      }
+      loadScript(function () {
+        beTracker.t({ hash: "1edc188511f6b8a61cc5d8ea1367e9d9" });
+      });
+    </script>
+  </head>
+
+  <body>
+    <svg class="sr-only" aria-hidden="true" focusable="false">
+      <defs>
+        <clipPath id="glass-clip" clipPathUnits="userSpaceOnUse">
+          <path d="M10 8 L50 8 L44.5 82 L15.5 82 Z" />
+        </clipPath>
+      </defs>
+    </svg>
+
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Principal">
+        <a class="nav__logo wordmark" href="/">
+          Beer
+          <span class="wordmark__mile">Mile</span>
+        </a>
+        <a class="btn btn--sky btn--sm" href="/">Volver al inicio</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="waitlist reg" aria-labelledby="mem-titulo">
+        <div class="container container--form">
+          <header class="section-head">
+            <p class="eyebrow">Postas</p>
+            <h1 id="mem-titulo" class="display display--xxl">
+              Tus datos
+              <span class="text-sky-light">del equipo</span>
+            </h1>
+            <p class="section-head__lead">
+              Tu capitán ya inscribió al equipo
+              <strong id="mem-equipo"></strong>
+              y pagó por todos. Completá tus datos y aceptá el deslinde para
+              poder acreditarte.
+            </p>
+          </header>
+
+          <div class="form-card">
+            <form id="member-form" class="waitlist-form" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="nombre">Nombre</label>
+                  <input
+                    id="nombre"
+                    name="nombre"
+                    type="text"
+                    autocomplete="given-name"
+                    required>
+                </div>
+                <div class="field">
+                  <label for="apellido">Apellido</label>
+                  <input
+                    id="apellido"
+                    name="apellido"
+                    type="text"
+                    autocomplete="family-name"
+                    required>
+                </div>
+                <div class="field">
+                  <label for="dni">DNI</label>
+                  <input
+                    id="dni"
+                    name="dni"
+                    type="text"
+                    inputmode="numeric"
+                    autocomplete="off"
+                    placeholder="Sin puntos"
+                    required>
+                </div>
+                <div class="field">
+                  <label for="nacimiento">Fecha de nacimiento</label>
+                  <input
+                    id="nacimiento"
+                    name="nacimiento"
+                    type="date"
+                    autocomplete="bday"
+                    required>
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                    placeholder="vos@mail.com">
+                </div>
+                <div class="field">
+                  <label for="celular">Celular</label>
+                  <input
+                    id="celular"
+                    name="celular"
+                    type="tel"
+                    autocomplete="tel"
+                    required
+                    placeholder="351 000 0000">
+                </div>
+                <div class="field">
+                  <label for="instagram">
+                    Instagram
+                    <span class="field__optional">(opcional)</span>
+                  </label>
+                  <input
+                    id="instagram"
+                    name="instagram"
+                    type="text"
+                    autocomplete="off"
+                    placeholder="@tuusuario">
+                </div>
+                <div class="field">
+                  <label for="milla">Tu milla estimada</label>
+                  <input
+                    id="milla"
+                    name="milla"
+                    type="text"
+                    inputmode="numeric"
+                    autocomplete="off"
+                    placeholder="mm:ss, por ejemplo 7:30"
+                    required>
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="field">
+                  <label for="emergencia-nombre">Contacto de emergencia</label>
+                  <input
+                    id="emergencia-nombre"
+                    name="emergencia_nombre"
+                    type="text"
+                    autocomplete="off"
+                    placeholder="Nombre y vínculo"
+                    required>
+                </div>
+                <div class="field">
+                  <label for="emergencia-telefono"
+                    >Teléfono de emergencia</label
+                  >
+                  <input
+                    id="emergencia-telefono"
+                    name="emergencia_telefono"
+                    type="tel"
+                    autocomplete="off"
+                    required>
+                </div>
+              </div>
+
+              <details class="reg-legal">
+                <summary>Leer el deslinde de responsabilidad</summary>
+                <p>
+                  El texto del deslinde se carga acá cuando lo revise la
+                  asesoría legal.
+                  <strong data-config="deslindeVersion">v1-borrador</strong>
+                </p>
+              </details>
+
+              <label class="check">
+                <input
+                  type="checkbox"
+                  name="acepta_deslinde"
+                  value="si"
+                  required>
+                <span
+                  >Tengo la edad mínima requerida y acepto el deslinde de
+                  responsabilidad.</span
+                >
+              </label>
+              <label class="check">
+                <input
+                  type="checkbox"
+                  name="acepta_datos"
+                  value="si"
+                  required>
+                <span
+                  >Autorizo el uso de mi imagen y el tratamiento de mis datos
+                  personales.</span
+                >
+              </label>
+
+              <button class="btn btn--dark btn--xl btn--block" type="submit">
+                Enviar mis datos
+              </button>
+              <p class="form-error" role="alert" hidden></p>
+            </form>
+
+            <div
+              id="member-done"
+              class="reg-done"
+              role="status"
+              tabindex="-1"
+              hidden
+            >
+              <p class="eyebrow">Datos recibidos</p>
+              <p class="success__lead">
+                Listo, ya estás en el equipo. Cuando se confirme la inscripción
+                te escribimos por email.
+              </p>
+              <a class="btn btn--dark btn--lg" href="/">Volver al inicio</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p class="wordmark wordmark--footer">
+          Beer
+          <span class="wordmark__mile">Mile</span>
+        </p>
+        <p class="eyebrow">Córdoba · Argentina</p>
+        <a
+          class="instagram-link"
+          href="https://www.instagram.com/thebeermile.arg/"
+          target="_blank"
+          rel="noopener"
+        >
+          @thebeermile.arg
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
